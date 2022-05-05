@@ -70,7 +70,6 @@ header h3{
   width: 100%;
   border-radius: 5px;
   height: 400px;
-  height: 400px;
   /* object-fit: cover; */
 }
 
@@ -78,7 +77,7 @@ header h3{
 .meme{
   position: relative;
   margin-top: 2%;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .top_text{
@@ -132,8 +131,9 @@ header h3{
 
 .edit_contents{
   position: absolute;
-  top: 0;
-  right: -35%;
+  top: 20;
+  z-index: 5;
+  right: -0%;
   padding: 5% 2%;
   border-radius: 15px;
   display: block;
@@ -155,8 +155,104 @@ header h3{
 
 .opener{
   color:rgb(0, 0, 71);
-  font-size: 3em;
-  display: inline-block;
-  margin: 0 50%;
+  font-size: 2em;
+  margin-left: 90%;
+  overflow: 'auto';
   cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) and (min-width: 501px) {
+  #root{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 20px grey;
+  }
+
+  .form img{
+    width: 100%;
+    border-radius: 5px;
+    height: 500px;
+    /* object-fit: cover; */
+  }
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px){
+
+  #root{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 20px grey;
+  }
+
+  header{
+    background: rgb(0, 0, 71);
+    color: white;
+    padding: 2%;
+    display: block;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #button{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  header h3{
+    margin-left: auto;
+  }
+
+  .img_changer_button{
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  
+  .download_btn{
+    width: 100%
+  }
+
+  .form input{
+    width: 100%;
+    margin-bottom: 2%;
+  }
 }
